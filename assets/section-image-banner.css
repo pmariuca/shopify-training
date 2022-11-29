@@ -6,6 +6,7 @@
 
 .banner__box {
   text-align: center;
+  color: #FFB4A2;
 }
 
 @media only screen and (max-width: 749px) {
