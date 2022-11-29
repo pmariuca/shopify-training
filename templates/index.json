@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Image banner",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text": {
@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/220901191124-fall-makeup-trends-danessa-lead.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
         "show_text_box": false,
