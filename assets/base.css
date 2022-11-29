@@ -1,7 +1,8 @@
 /* Color custom properties */
+:root,
 .color-background-1 {
-  --color-foreground: var(--color-base-text);
-  --color-background: var(--color-base-background-1);
+  --color-foreground: #6D6875;
+  --color-background: #FFF3ED;
   --gradient-background: var(--gradient-base-background-1);
 }
 
@@ -2244,10 +2245,13 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   z-index: 1;
+  --header_colour: var(--color-background);
+  --header_alt_colour: var(--color-foreground);
 }
 
 .header-wrapper:hover {
-  background-color: #FFCDB2;
+  background-color: #FFF3ED;
+  color: var(--color-foreground);
   transition: 0.5s ease-in;
 }
 
