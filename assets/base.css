@@ -3,7 +3,6 @@
 .color-background-1 {
   --color-foreground: #6D6875;
   --color-background: #FFF3ED;
-  --gradient-background: var(--gradient-base-background-1);
 }
 
 .color-background-2 {
