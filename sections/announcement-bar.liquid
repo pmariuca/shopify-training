@@ -8,7 +8,8 @@
           {%- endif -%}
               <div class="page-width">
                 <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                  {{ block.settings.text | escape }}
+                  {% comment %}{{ block.settings.text | escape }}{% endcomment %}
+                  Welcome!
                   {%- if block.settings.link != blank -%}
                     {% render 'icon-arrow' %}
                   {%- endif -%}
