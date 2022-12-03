@@ -156,6 +156,11 @@
   --color-icon: rgb(var(--color-base-outline-button-labels));
 }
 
+:root{
+  --announcement-bar-height: 4.52rem;
+  --header-height: 8.9rem;
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
@@ -2244,6 +2249,7 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  color: var(--color-foreground);
   z-index: 1;
 }
 

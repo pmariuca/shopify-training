@@ -236,7 +236,7 @@
     </script>
   </head>
 
-  <body class="gradient">
+  <body class="gradient template-{{ template |  split: '.' |  first }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -246,6 +246,9 @@
     {%- endif -%}
 
     {% section 'announcement-bar' %}
+    {% if template == 'homepage' %}
+    {% section 'header-homepage' %}
+    {% else %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
