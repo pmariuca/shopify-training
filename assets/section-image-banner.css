@@ -331,6 +331,17 @@
     --alpha-button-background: 0;
   }
 
+  .banner--desktop-transparent .button--secondary {
+    color: var(--color-button-text);
+    border-radius: 0;
+  }
+
+  .banner--desktop-transparent .button--secondary:hover {
+    border: 0.1rem solid var(--color-foreground);
+    font-weight: normal;
+    border-radius: 0;
+  }
+
   .banner--desktop-transparent .content-container:after {
     display: none;
   }
