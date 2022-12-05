@@ -700,7 +700,7 @@ hr {
 
 .full-unstyled-link {
   text-decoration: none;
-  color: currentColor;
+  color: var(--color-foreground);
   display: block;
 }
 
@@ -1306,7 +1306,6 @@ button.shopify-payment-button__button--unbranded,
   --shadow-opacity: var(--buttons-shadow-opacity);
   --shadow-visible: var(--buttons-shadow-visible);
   --border-offset: var(--buttons-border-offset); /* reduce radius edge artifacts */
-  --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
 }
@@ -1343,7 +1342,15 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background: transparent;
+  color: var(--color-foreground);
+  border-radius: 10px;
+  border: 0.1rem solid var(--color-foreground);
+}
+
+.button:hover {
+  border: 0.2rem solid var(--color-foreground);
+  font-weight: bold;
 }
 
 .button:before,
@@ -1374,7 +1381,6 @@ button.shopify-payment-button__button--unbranded {
   bottom: var(--buttons-border-width);
   left: var(--buttons-border-width);
   z-index: 1;
-  border-radius: var(--buttons-radius);
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
@@ -2186,8 +2192,7 @@ input[type='checkbox'] {
 }
 
 .announcement-bar {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  color: rgb(var(--color-foreground));
+  color: var(--color-foreground);
 }
 
 .announcement-bar__link {
