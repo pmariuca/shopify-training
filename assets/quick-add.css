@@ -19,7 +19,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(var(--color-foreground), 0.2);
   height: 100%;
 }
 
@@ -36,10 +35,11 @@
   transform: translateX(-50%);
   margin: 3.2rem auto 0;
   width: 100%;
-  background-color: rgb(var(--color-background));
   overflow: hidden;
   max-width: var(--page-width);
   width: calc(100% - 3rem);
+  background-color: var(--color-background);
+  border: none;
 }
 
 @media screen and (min-width: 750px) {
@@ -208,4 +208,8 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+}
+
+.h2-color {
+  color: var(--color-foreground);
 }
