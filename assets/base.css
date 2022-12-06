@@ -158,7 +158,7 @@
 
 :root{
   --announcement-bar-height: 4.52rem;
-  --header-height: 8.9rem;
+  --header-height: 8.5rem;
 }
 
 .product-card-wrapper .card,
@@ -2260,6 +2260,7 @@ input[type='checkbox'] {
 
 .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid var(--color-background);
+  border-top: 0.1rem solid var(--color-background);
 }
 
 .header {
