@@ -25,8 +25,8 @@
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    <h1 class="title title--primary" style="color: var(--color-foreground);">{{ 'sections.cart.title' | t }}</h1>
+    <a href="{{ routes.all_products_collection_url }}" class="underlined-link" style="color: var(--color-foreground);">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <div class="cart__warnings">
@@ -47,7 +47,7 @@
     <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
       <div class="js-contents">
         {%- if cart != empty -%}
-          <table class="cart-items">
+          <table class="cart-items" style="color: var(--color-foreground);">
             <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
             <thead>
               <tr>
