@@ -1,3 +1,7 @@
+.contact {
+  color: var(--color-foreground);
+}
+
 .contact img {
   max-width: 100%;
 }

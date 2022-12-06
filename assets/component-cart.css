@@ -173,10 +173,6 @@ cart-items {
   margin-top: 1rem;
 }
 
-.cart__dynamic-checkout-buttons div[role='button'] {
-  border-radius: var(--buttons-radius-outset) !important;
-}
-
 .cart-note__label {
   display: inline-block;
   margin-bottom: 1rem;
