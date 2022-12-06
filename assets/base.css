@@ -2,10 +2,10 @@
 
 :root,
 .color-background-1 {
-  --color-foreground: #727E9C;
-  --color-background: #F8B4A2;
-  --color-background_2: #FFE6DA;
-  --gradient-background: #FFF3ED;
+  --color-foreground: #6d6875;
+  --color-background: #f8edeb;
+  --color-background_2: #fcd5ce;
+  --gradient-background: #f9dcc4;
 }
 
 .color-background-2 {
@@ -2307,6 +2307,7 @@ input[type='checkbox'] {
 }
 
 .header__heading {
+  color: var(--color-background);
   margin: 0;
   line-height: 0;
 }
