@@ -337,7 +337,7 @@
   }
 
   .banner--desktop-transparent .button--secondary:hover {
-    border: 0.1rem solid var(--color-foreground);
+    border: 0.1rem solid var(--color-background);
     font-weight: normal;
     border-radius: 0;
   }
